@@ -9,8 +9,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgba(146, 93, 58, 0.5);
-    color: white;
+    background-color: rgba(146, 93, 58, 0.63);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: whitesmoke;
@@ -50,6 +49,8 @@ h3 {
 
 p {
     font-family: Poppins, sans-serif;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
 }
 
 li {
@@ -59,9 +60,87 @@ li {
 }
 
 .homepage-card {
-    background: linear-gradient(#e66465, #9198e5);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.411);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.411);
     border: none;
+    overflow: hidden;
+    position: relative;
+    height: 110%;
+    width: 100%;
+}
+
+.homepage-card.scaled {
+    position: relative;
+    z-index: 999; 
+    &.scaledBack {
+      z-index: 0;
+    }
+}
+
+.homepage-card.baseMotion {
+    transition: transform 0.23s;
+    &:hover {
+      transform: scale(1.05);
+    }
+}
+
+.card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1.9px);
+    z-index: 1;
+}
+
+.card-title {
+    font-family: Popins, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    text-shadow: 3px 4px 4px rgb(0, 0, 0);
+}
+
+.card-body {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+}
+
+.card-list {
+    margin-top: auto;
+    margin-bottom: auto;
+    list-style-type: none;
+    text-align: center;
+}
+
+.card-list-element a {
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 4px 4px rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.card-list-element a:hover {
+    color: rgb(255, 0, 0);
+}
+
+#card-eloetel {
+    background-image: url("../img/card-bg/eloetel.jpg");
+}
+
+#card-leves {
+    background-image: url("../img/card-bg/leves.jpeg");
+}
+
+#card-foetel {
+    background-image: url("../img/card-bg/foetel.jpg");
+}
+
+#card-edesseg {
+    background-image: url("../img/card-bg/edesseg.jpg");
 }
 
 footer {
