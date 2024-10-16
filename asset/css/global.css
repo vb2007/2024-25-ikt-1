@@ -1,7 +1,7 @@
 body {
     background-color: gray;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     color: whitesmoke;
 }
 
@@ -21,6 +21,12 @@ h3 {
     font-size: 120%;
 }
 
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: whitesmoke;
+}
+
 a {
     text-decoration: none;
     color: green;
@@ -30,3 +36,13 @@ a:hover {
     color: darkgreen;
 }
 
+img {
+    display: block;
+    max-width: 600px;
+    height: auto;
+}
+
+main {
+    margin-right: auto;
+    margin-left: auto;
+}
