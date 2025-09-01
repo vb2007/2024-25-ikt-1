@@ -10,7 +10,7 @@ The project's original **README**.md file can be viewed [HERE](./README.old.md).
 
 ---
 
-# A 2024-25-ös tanév 4. IKT projektje.
+# A 2024-25-ös tanév 1. IKT projektje.
 
 ## Archivált projekt
 
